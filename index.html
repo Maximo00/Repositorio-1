@@ -1,0 +1,424 @@
+<html lang="eng"> 
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>La web de Maximo</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  height: 900px;
+  position: relative; bottom: 700px; left: px;
+  margin: auto;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative; bottom: 970px; right: 0px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+
+
+
+
+
+<body>
+
+
+<img id="Imagen3" src="image3.jpg" alt="" height="600px" width="1440px">
+
+<button class="tablink" onclick="openPage('Home', this, 'grey')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'grey')" id="defaultOpen">History</button>
+<button class="tablink" onclick="openPage('Contact', this, 'grey')">Gallery</button>
+<button class="tablink" onclick="openPage('About', this, 'grey')">Sponsors</button>
+
+<div id="Home" class="tabcontent">
+    
+    <header>Diego Schwartzman</header>
+    
+    
+    <br>
+    
+    <a id="Facebook" href="https://www.facebook.com/dieschwartzman" target="_blank"><img src="Facebook.webp" alt="facebook" height="80px" width="80px"></a>
+    <a id="Twitter" href="https://twitter.com/dieschwartzman" target="_blank"><img src="twitter.jpg" alt="twitter" height="80px" width="80px"></a>
+    <a id="Instagram" href="https://www.instagram.com/dieschwartzman/" target="_blank"><img src="Instagram.jpg" alt="" height="80px" width="80px"></a>
+    
+        
+    
+    <div id="Tracer">
+        <h4>Tour Tracer</h4>
+        <p id="Tournament"></br><b>Rothesay International</b></p>
+        <p id="Date">June 20-25, 2022</p>
+        <p id="City">Eastbourne</p>
+        <p id="Link"><a href="https://www.lta.org.uk/fan-zone/international/rothesay-international-eastbourne/" target="_blank">more</a></p>
+    
+    
+        <p id="Roland"></br><b>Wimbledon</b></p>
+        <p id="Date2">June-July 27-07, 2022</p>
+        <p id="City2">London</p>
+        <p id="Link2"><a href="https://www.wimbledon.com/" target="_blank">more</a></p>
+    
+    </div>
+    
+    <div id="Rank1">
+        <h4 id="Rank">ATP RANK</h4>
+        <p id="Ranking">15</p>
+        <img id="Bandera" src="Flag.webp" alt="" height="100px" width="150px">
+        <p id="ARG">ARG</p>
+     
+    </div>
+    
+    <div id="Oponente">
+        <img id="Jack" src="jack-draper.png" alt="" height="120px" width="120px">
+        <h4 id="Proximo">Próximo Partido:</h4>
+        <p id="Draper">Jack Draper</p>
+        <img id="Inglaterra" src="Inglaterra.png" alt="" height="11px" width="21px">
+        <p id="info"> <b>21/06/2022</b></br> </br> <b>Rothesay International</b> </br> </br> <b>Octavos de Final</b></p>
+        <img id="linea" src="Linea.png" alt="" height="150px" width="100px">
+    </div>
+    
+    
+    <br>
+    
+    <div id="Datos">
+        <h4 id="Informacion">Información Personal</h4>
+        <ul id="Info1">
+            <li>Edad: 29 (16/08/1992)</li>
+            <li>Altura: 1.70cm</li>
+            <li>Peso: 64kg</li>
+            <li>Lugar de Nacimiento: Buenos Aires, Argentina</li>
+            <li>Profesional Desde: 2010</li>
+            <li>Juego: Diestro, Reves Dos Manos</li>
+            <li>Entrenador: Juan Ignacio Chela</li>
+        </ul>
+    
+    </div>
+    
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image3.jpg" style="width:100%" height="70%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="image2.jpg" style="width:100%" height="70%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="image1.jpg" style="width:100%" height="70%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <br> 
+    <br> 
+    
+    
+    <iframe  id="Video" width="560" height="415" src="https://www.youtube.com/embed/5OPGdVHwLnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-user"></i></p>
+            <img src="goingup.png" alt="" height="90px" width="90px">
+            <h3>8</h3>
+            <p>Mejor Ranking</p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-check"></i></p>
+            <img src="Trofeo.jpg" alt="" width="90px" height="90px">
+            <h3>4</h3>
+            <p>Titulos</p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-smile-o"></i></p>
+            <img src="target.jpg" alt="" height="90px" width="90px">
+            <h3>230</h3>
+            <p>Partidos Ganados</p>
+            
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-coffee"></i></p>
+            <img src="money.png" alt="" height="90px" width="90px">
+            <h3>12M+</h3>
+            <p>Dinero en Premios</p>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    <footer>
+        <img id="logo" src="logo.png" alt="logo1" height="90px" width="90px">
+        <button id="button" onclick="openPage('Home', this, 'white')">Home</button>
+        <button id="button2" onclick="openPage('News', this, 'white')" id="defaultOpen">History</button>
+        <button id="button3" onclick="openPage('Contact', this, 'white')">Gallery</button>
+        <button id="button4" onclick="openPage('About', this, 'white')">Sponsors</button>
+        <p id="DS"><b>DS INC.</b></p>
+        <p id="Rights">All Rights Reserved ©2022 DS INC.</p>
+        <p id="Desarrollador">Desarrollador: Maximo Ambrosio</p>
+        <p id="Mail">Informacion de Contacto: </br> mambrosio@itba.edu.ar</p>
+        
+
+    </footer>
+    
+</div>
+
+<div id="News" class="tabcontent">
+
+<h2>Diego Schwartzman</h2>
+
+<p id="Texto1"><img id="FotoTexto" src="SchwartzmanVerde.jpg" alt="" height="300px" width="200px">
+
+Diego Sebastián Schwartzman Daiez (Buenos Aires, 16 de agosto de 1992), también conocido como “El Peque”, es un tenista argentino. Formado en el Club Náutico Hacoaj, Schwartzman llegó a su más alto ranking, n.º 8 el 12 de octubre de 2020 y en dobles n.º 39 en enero de 2020.2​ Es parte de la generación de tenistas argentinos top 100 nacidos a principios de 1990, junto con Federico Delbonis, Guido Pella, Facundo Bagnis, Juan Ignacio Londero y Federico Coria. Entre sus victorias más importantes se encuentran los triunfos ante jugadores Top 10: ante Rafael Nadal (n.º 2) en el Masters de Roma 2020, ante Dominic Thiem (n.º 3) en el Masters de Canadá 2017, en el Argentina Open 2019 y en Roland Garros 2020, Marin Čilić (n.º 7) en el US Open 2017, Kevin Anderson (n.º 7) en Roland Garros 2018, Kei Nishikori (n.º 6) en el Masters de Roma 2019, Alexander Zverev (n.º 6) en los octavos de final del Abierto de Estados Unidos 20194​ y Casper Ruud (n.º 10) en el Masters de Indian Wells 2021.
+<h3>Biografía</h3> Schwartzman es judío, su padre se llama Ricardo y su madre Silvana Daiez. Nació y reside en Buenos Aires, Argentina. Durante el Holocausto, su bisabuelo materno polaco fue llevado en tren a un campo de concentración nazi.8​ El acoplamiento que conectaba dos de los vagones del tren se rompió, lo que permitió que su bisabuelo y otras personas dentro de un vagón escaparan. Su bisabuelo trajo a su familia en barco desde Alemania a Argentina. Los antepasados de su padre emigraron de Rusia a Argentina en barco. Schwartzman tiene dos hermanos (uno programador de computadoras, el otro agente de viajes) y una hermana (abogada). Es apodado "Peque" por su estatura relativamente baja para un tenista.11​ Sus entrenadores son Juan Ignacio Chela y Leonardo Olguín.
+</p>
+
+<p> 
+<h3>Carrera Profesional</h3> <h4>2010-2012</h4> 
+En 2010 Disputó su primer torneo profesional en el F5 de Argentina perdiendo en primera ronda contra su compatriota Juan Vázquez Valenzuela. En el mes de junio Schwartzman disputó el F9 de Argentina también, perdiendo en primera ronda contra Juan Pablo Villar. Durante 2012 obtiene 5 torneos futures consecutivos, lo que le permitió posicionarse en el puesto 245 atp. Posteriormente integró el cuadro principal del Challenger de Buenos Aires disputado en Buenos Aires, venciendo en primera ronda al portugués Frederico Gil, en la siguiente ronda venció al ecuatoriano Julio César Campozano, en cuartos de final a su compatriota Martín Alund, en semifinales a Agustín Velotti y derrotó en la final al francés Guillaume Rufin para quedarse con su primer título de la categoría ATP Challenger Series ganando el Challenger de Buenos Aires 2012.
+<h4>2013</h4>
+Desde 2013 comienza a disputar regularmente torneos en el ATP World Tour. Así llegó, por ejemplo, al Torneo de Buenos Aires donde en primera ronda derrotó al brasilero Thomaz Bellucci por 64 46 61 y en la segunda vuelta, cayó derrotado en dos sets ante el español Tommy Robredo. En el Torneo de Acapulco, disputó exitosamente la ronda clasificatoria. Entró de esta manera en el cuadro principal de un torneo ATP 500. Tuvo mala suerte en el sorteo, y se tuvo que enfrentar en primera ronda ante el campeón final del torneo, el español Rafael Nadal. También disputó los torneos de Bastad, Hamburgo y Viña del Mar. Ganó su segundo título challenger. Otra vez triunfa en el Challenger de Buenos Aires 2013, esta vez en dobles, haciendo pareja con su compatriota Máximo González. Derrotaron en la final a la pareja brasilera formada por Rogério Dutra da Silva y André Ghem.
+<h4>2014</h4>
+En el mes de abril ganó el São Paulo Challenger de Tênis 2014 disputado en la ciudad de San Pablo, Brasil. Lo hizo en la modalidad de dobles junto a su compatriota Guido Pella derrotando en la final a otros argentinos Máximo González y Andrés Molteni por 1-6, 6-3, 10-4. Un mes más tarde, el tenista argentino se consagró campeón del Challenger de Aix-en-Provence, disputado en Francia al derrotar al zurdo alemán Andreas Beck por 6-7 (4-7), 6-2 y 6-3. En un partido que duró 2 horas y 10 minutos de juego, se quedó con el certamen que repartía 64.000 dólares en premios. Schwartzman había dejado en el camino en las rondas previas al italiano Matteo Viola (185), al francés David Guez (180), al checo Jan Hernych (201) y al suizo Yann Marti (301). El día anterior había festejado al vencer en la final de dobles junto a su compatriota Horacio Zeballos. Este es el segundo título en challengers en singles para el porteño tras el conseguido en Buenos Aires, en octubre de 2012, y el tercero que suma en dobles en la misma categoría.13​ Schwartzman hizo su primera aparición en el cuadro principal de un Grand Slam en Roland Garros 2014; llegó desde la clasificación antes de perder en la segunda ronda, ante Roger Federer. Perdió en la primera ronda del US Open 2014 frente a Novak Djokovic. En el mes de agosto el argentino venció al brasileño al brasilero André Ghem (251°) y se quedó con el Challenger de Praga-2 2014, torneo que se disputó sobre arcilla y repartió 50.000 dólares en premios. Fue 6-4 y 7-5 para el nacido en Buenos Aires luego de una hora y 41 minutos de juego en el Cesky Lawn Tennis Klub de Praga. Así, se quedó con su segundo título en esta temporada, tercero en su carrera a este nivel.14​ En las ATP Challenger Tour Finals, ganó a João Souza, Simone Bolelli y Guilherme Clezar para reclamar el título. A finales de 2014, ocupó el puesto 61° en el mundo.
+</p>
+
+<p><img  id="FotoTexto2" src="Joven.jpg" alt="" height="250px" width="150px">
+
+    <h4>2015</h4>
+    A principios de 2015, participó en el ATP 250 de Auckland. Elimina en la primera ronda a Guillermo García-López (37° del mundo) en tres sets15​ antes de caer contra el estadounidense Donald Young en tres sets. Luego participó en el Abierto de Australia donde jugó contra el cañonero sudafricano y 16 del mundo Kevin Anderson en cuatro sets en un duro partido por 7-6, 7-5, 5-7, 6-4. El resto de la temporada es más complicado, a pesar de algunos buenos partidos como contra Jerzy Janowicz en Indian Wells, los resultados tardan en llegar.16​ En Estambul, realiza su primer gran torneo en el circuito principal. Eliminó en las primeras rondas a Blaž Kavčič y Jürgen Melzer por contundentes 6-1, 6-2 y 6-0, 6-2 respectivamente.17​ En cuartos de final, derrotó a Santiago Giraldo tras levantar un "rosco" (0-6) y ganar los dos siguientes sets por doble 6-2.18​ En semifinales se enfrenta por tercera vez en su carrera a Roger Federer. Y por primera vez, ganó un set, a pesar de jugar a un gran nivel y en un partido parejo, terminó cayendo por 2-6, 6-2, 7-5.19​ En el Masters de Roma, entra desde la calificación antes de retirarse en la primera ronda por problemas físicos en su encuentro contra Thomaz Bellucci. Luego participó en su segundo Roland Garros, en 1R derrota al austriaco Andreas Haider-Maurer en 4 sets: 6-3, 5-7, 6-3, 7-6.20​ En la segunda ronda, se enfrenta al cabeza de serie número 13 y ex semifinalista del torneo, Gaël Monfils. Para sorpresa de muchos, domina el partido e incluso llega a estar 2 sets a 1 arriba. Consigue puntos de quiebre en el cuarto set pero no los convierte. Posteriormente, Monfils logra ganar el 4° y 5° set para ganar: 4-6, 6-4, 4-6, 6-2, 6-3.21​ Meses después en septiembre jugó las Semifinales de la Copa Davis contra Bélgica jugó un punto el cuarto y lo perdió en sets corridos contra David Goffin22​ finalmente los belgas ganarían por 3 a 2 luego que Steve Darcis ganará el último punto.
+<h4>2016</h4>
+Después de un comienzo bastante complicado, Schwartzman ganó su primer título en el ATP 250 de Estambul sobre Arcilla. Derrota en la primera ronda a Facundo Bagnis por 6-1 y 6-4, luego se deshace de principal favorito Bernard Tomic por doble 6-2.23​ En cuartos, venció a Damir Džumhur remontando por 5-7, 7-6(4) y 6-2. Volvió a hacer lo mismo en semifinales tras vencer a Federico Delbonis al ganar por (5)6-7, 6-3 y 6-2. Ganó su primera final en el circuito principal al imponerse a Grigor Dimitrov, cabeza de serie número 2 del torneo. Después de un primer set marcado por muchas rupturas, el búlgaro se lo llevó por 7-6. En el segundo set, Dimitrov lideraba por 5-2 antes de ver el resurgimiento de Schwartzman, quien le arrebata el segundo set en la muerte súbita. El argentino logra sacar su mejor versión en la ronda final, Dimitrov luego se recupera mentalmente y termina con 5-0, 40 iguales al romper una tercera raqueta que le otorgará un juego de penalización (tras haber roto dos antes) y le daría a Schwartzman su primer título en el circuito.24​ Después de un partido heroico por su parte. Más tarde, Dimitrov se disculpó por su comportamiento durante el partido.
+<h4>2017</h4>
+El 5 de diciembre de 2016 comenzó una fuerte pretemporada supervisada por Martiniano Orazi (que trabajó con Juan Martín del Potro durante más de siete años) y Juan Manuel Galván (preparador físico, entre otros, del bahiense Guido Pella). Fue en Sports Lab, un centro de alto rendimiento que funciona en Parque Norte; allí se empezó a gestar el crecimiento atlético para la temporada entrante.28​ En el primer Grand Slam del año, el Abierto de Australia llegó hasta la segunda ronda cayendo ante Steve Darcis en cuatro sets.29​ En los dos primeros Masters 1000 del año sobre pista dura: en Indian Wells y Miami en el primero cayó eliminado en 1°Ronda ante Joao Sousa por 4-6, 6-3, 6-4 y en el segundo cayó ante David Goffin por un apretado 6-4, 3-6 y 5-730​ antes vino de eliminar en segunda ronda al ex n.º 3 del mundo David Ferrer por 6-3 y 6-2.31​
+
+<h4>2018-2022</h4>
+Comenzó la Temporada 2018 en el Abierto de Australia llegando hasta octavos de final por segunda vez consecutiva en sus 18 participaciones en Grand Slam, en primera ronda derrotó a Dusan Lajović en un maratonico partido de cinco sets por 2-6, 6-3, 5-7, 6-4, 11-957​ (Al igual que el año pasado en Melbourne Park), después en segunda ronda se despacharía a Casper Ruud por 6-4, 6-2 y 6-3; en tercera derrotó al ucraniano Aleksandr Dolgopólov por 66-7, 6-2, 6-3 y 6-358​ para enfrentarse al n.º 1 del mundo Rafael Nadal en octavos de final, hizo segunda semana en una Major por segunda vez consecutiva, tras su actuación en los cuartos de final en el US Open 2017. A pesar de entrar en el partido con un récord de 0-3 cabeza a cabeza, 0-7 en sets, Schwartzman tomó el segundo set por 7-4 en la muerte súbita (Nadal ganó el primero 6-3), luego el balear ganaría los dos segundos sets restantes por doble 6-3 en tres horas y 51 minutos logrando su mejor actuación en Melbourne.59​ En virtud de su actuación, alcanzó un nuevo ranking individual de individuales con el n.º 24 el 29 de enero de 2018.
+En el comienzo de la temporada 2022, logró alcanzar las finales en los torneos, ATP 250 de Buenos Aires y ATP 500 de Río de Janeiro sobre polvo de ladrillo, cayendo en ambas ante el noruego Casper Ruud y el español Carlos Alcaraz respectivamente.
+</p>
+
+ 
+
+
+
+
+
+    <footer id="footer2">
+        <img id="logo" src="logo.png" alt="logo1" height="90px" width="90px">
+        <button id="button" onclick="openPage('Home', this, 'grey')">Home</button>
+        <button id="button2" onclick="openPage('News', this, 'grey')" id="defaultOpen">History</button>
+        <button id="button3" onclick="openPage('Contact', this, 'grey')">Gallery</button>
+        <button id="button4" onclick="openPage('About', this, 'grey')">Sponsors</button>
+        <p id="DS"><b>DS INC.</b></p>
+        <p id="Rights">All Rights Reserved ©2022 DS INC.</p>
+        <p id="Desarrollador">Desarrollador: Maximo Ambrosio</p>
+        <p id="Mail">Informacion de Contacto: </br> mambrosio@itba.edu.ar</p>
+        
+
+    </footer>
+   
+
+
+
+
+
+
+
+
+</div>
+
+
+<div id="Contact" class="tabcontent">
+ 
+
+<header id="header3">Diego Schwartzman Image Gallery</header> 
+
+<br><br>
+
+
+<div class="gallery">
+    <a target="_blank" href="image2.jpg">
+      <img src="image2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">D.S, JJ.OO Tokyo 2020</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="Joven.jpg">
+      <img src="Joven.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">D.S, ATP 250 Estambul 2016</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="Federer.jpg">
+      <img src="Federer.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">D.S con Roger Federer, Indian Wells 2019</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="SchwartzmanVerde.jpg">
+      <img src="SchwartzmanVerde.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">D.S, US Open 2018 </div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="Isner.jpg">
+      <img src="Isner.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">D.S, con John Isner, Roma 2022</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="Nadal.jpg">
+      <img src="Nadal.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">D.S, con Nadal US Open 2019</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="US open.jpg">
+      <img src="US open.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">D.S, US Open 2021</div>
+  </div>
+ 
+
+
+ 
+<div id="About" class="tabcontent">
+
+ 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html> 
