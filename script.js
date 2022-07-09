@@ -22,44 +22,37 @@ function openPage(pageName, elmnt, color) {
   
   document.getElementById("defaultOpen").click();
 
-  google.charts.load('current',{packages:['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-  
-  function drawChart() {
-  
-  var data = google.visualization.arrayToDataTable([
-    ['Meses', 'Numero Ranking ATP'],
-    [1,13],[2,16],[3,15],[4,16],[5,15],
-    [6,15]
-  ]);
-  
-  var options = {
-    title: 'ATP Ranking 2022',
-    hAxis: {title: 'Meses'},
-    vAxis: {title: 'Numero Ranking ATP'},
-    legend: 'none'
-  };
- 
-  var chart = new google.visualization.LineChart(document.getElementById('myChart'));
-  chart.draw(data, options);
-  }
-
-
 
 mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+
+
+var countDownDate = new Date("July 20, 2022 14:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("contador").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("contador").innerHTML = "EXPIRED";
   }
-}
+
+}, 1000);
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
