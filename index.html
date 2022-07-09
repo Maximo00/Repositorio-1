@@ -1,5 +1,5 @@
 <html lang="eng"> 
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" ></script>
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>La web de Maximo</title>
@@ -14,7 +14,7 @@ img {vertical-align: middle;}
 
 .slideshow-container {
   height: 900px;
-  position: relative; bottom: 700px; left: px;
+  
   margin: auto;
 }
 
@@ -59,7 +59,7 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  position: relative; bottom: 970px; right: 0px;
+  position: relative; bottom: 280px;
 }
 
 .active, .dot:hover {
@@ -97,6 +97,7 @@ img {vertical-align: middle;}
 <button class="tablink" onclick="openPage('Contact', this, 'grey')">Gallery</button>
 <button class="tablink" onclick="openPage('About', this, 'grey')">Sponsors</button>
 
+
 <div id="Home" class="tabcontent">
     
     <header>Diego Schwartzman</header>
@@ -110,10 +111,11 @@ img {vertical-align: middle;}
     <a id="Twitter" href="https://twitter.com/dieschwartzman" target="_blank"><img src="twitter.jpg" alt="twitter" height="80px" width="80px"></a>
     <a id="Instagram" href="https://www.instagram.com/dieschwartzman/" target="_blank"><img src="Instagram.jpg" alt="" height="80px" width="80px"></a>
     
-        
-    
-    <div id="Tracer">
-        <h4>Tour Tracer</h4>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="inline"> 
+      <div class="one"> 
+        <h4 id="tracer1">Tour Tracer</h4>
         <p id="Tournament"></br><b>Rothesay International</b></p>
         <p id="Date">June 20-25, 2022</p>
         <p id="City">Eastbourne</p>
@@ -125,30 +127,68 @@ img {vertical-align: middle;}
         <p id="City2">London</p>
         <p id="Link2"><a href="https://www.wimbledon.com/" target="_blank">more</a></p>
     
-    </div>
+      </div> 
     
-    <div id="Rank1">
+      <div class="two"> 
         <h4 id="Rank">ATP RANK</h4>
         <p id="Ranking">15</p>
         <img id="Bandera" src="Flag.webp" alt="" height="100px" width="150px">
         <p id="ARG">ARG</p>
-     
+      </div> 
+    
+    <div class="three">
+      <img id="Jack" src="jack-draper.png" alt="" height="120px" width="120px">
+      <h4 id="Proximo">Próximo Partido:</h4>
+      <p id="Draper">Jack Draper</p>
+      <img id="Inglaterra" src="Inglaterra.png" alt="" height="11px" width="21px">
+      <p id="info"> <b>21/06/2022</b></br> </br> <b>Rothesay International</b> </br> </br> <b>Octavos de Final</b></p>
+      <img id="linea" src="Linea.png" alt="" height="150px" width="100px">
+    
     </div>
     
-    <div id="Oponente">
-        <img id="Jack" src="jack-draper.png" alt="" height="120px" width="120px">
-        <h4 id="Proximo">Próximo Partido:</h4>
-        <p id="Draper">Jack Draper</p>
-        <img id="Inglaterra" src="Inglaterra.png" alt="" height="11px" width="21px">
-        <p id="info"> <b>21/06/2022</b></br> </br> <b>Rothesay International</b> </br> </br> <b>Octavos de Final</b></p>
-        <img id="linea" src="Linea.png" alt="" height="150px" width="100px">
-    </div>
+      </div> 
     
+      <div class="slideshow-container">
+      
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="image3.jpg" style="width:100%" height="70%">
+        </div>
+       
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="image2.jpg" style="width:100%" height="70%">
+        </div>
+       
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="image1.jpg" style="width:100%" height="70%">
+        </div>
+       
+        </div>
+        <br>
+       
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+       
+    <div id="inline2">
     
-    <br>
-    
-    <div id="Datos">
-        <h4 id="Informacion">Información Personal</h4>
+      <iframe  class="Video" width="560" height="415" src="https://www.youtube.com/embed/5OPGdVHwLnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      <div class="timer5">
+        <h6 id="proximo5">Proximo Partido:</h6>
+        <p id="contador"></p>
+
+      </div>
+
+
+
+      <div class="Informacion"><h4 id="info5">Información Personal</h4>
         <ul id="Info1">
             <li>Edad: 29 (16/08/1992)</li>
             <li>Altura: 1.70cm</li>
@@ -158,103 +198,85 @@ img {vertical-align: middle;}
             <li>Juego: Diestro, Reves Dos Manos</li>
             <li>Entrenador: Juan Ignacio Chela</li>
         </ul>
-    
+    </div>
     </div>
     
-    
-    <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="image3.jpg" style="width:100%" height="70%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="image2.jpg" style="width:100%" height="70%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="image1.jpg" style="width:100%" height="70%">
-    </div>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <br> 
-    <br> 
-    
-    
-    <iframe  id="Video" width="560" height="415" src="https://www.youtube.com/embed/5OPGdVHwLnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
 
-    <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
 
+    
+  <br><br><br><br><br><br>
+    
+    
     <div class="row">
-        <div class="column">
-          <div class="card">
-            <p><i class="fa fa-user"></i></p>
-            <img src="goingup.png" alt="" height="90px" width="90px">
-            <h3>8</h3>
-            <p>Mejor Ranking</p>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <p><i class="fa fa-check"></i></p>
-            <img src="Trofeo.jpg" alt="" width="90px" height="90px">
-            <h3>4</h3>
-            <p>Titulos</p>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <p><i class="fa fa-smile-o"></i></p>
-            <img src="target.jpg" alt="" height="90px" width="90px">
-            <h3>230</h3>
-            <p>Partidos Ganados</p>
-            
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <p><i class="fa fa-coffee"></i></p>
-            <img src="money.png" alt="" height="90px" width="90px">
-            <h3>12M+</h3>
-            <p>Dinero en Premios</p>
-          </div>
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-user"></i></p>
+          <img src="Chart.png" alt="" height="90px" width="90px">
+          <h3>8</h3>
+          <p>Mejor Ranking</p>
         </div>
       </div>
     
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-check"></i></p>
+          <img src="Trophy.png" alt="" width="90px" height="90px">
+          <h3>4</h3>
+          <p>Titulos</p>
+        </div>
+      </div>
     
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-smile-o"></i></p>
+          <img src="Target.png" alt="" height="90px" width="90px">
+          <h3>230</h3>
+          <p>Partidos Ganados</p>
+         
+        </div>
+      </div>
     
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-coffee"></i></p>
+          <img src="money.png" alt="" height="90px" width="90px">
+          <h3>12M+</h3>
+          <p>Dinero en Premios</p>
+        </div>
+      </div>
+    </div>
     
-    
-    
-    <footer>
-        <img id="logo" src="logo.png" alt="logo1" height="90px" width="90px">
-        <button id="button" onclick="openPage('Home', this, 'white')">Home</button>
-        <button id="button2" onclick="openPage('News', this, 'white')" id="defaultOpen">History</button>
-        <button id="button3" onclick="openPage('Contact', this, 'white')">Gallery</button>
-        <button id="button4" onclick="openPage('About', this, 'white')">Sponsors</button>
-        <p id="DS"><b>DS INC.</b></p>
-        <p id="Rights">All Rights Reserved ©2022 DS INC.</p>
-        <p id="Desarrollador">Desarrollador: Maximo Ambrosio</p>
-        <p id="Mail">Informacion de Contacto: </br> mambrosio@itba.edu.ar</p>
-        
 
-    </footer>
+    <br><br><br><br>
     
+    
+
+
+    <footer>
+      <img id="logo" src="logo.png" alt="logo1" height="90px" width="90px">
+      <button class="button" onclick="openPage('Home', this, 'grey')" id="defaultOpen">Home</button>
+      <button class="button2" onclick="openPage('News', this, 'grey')">History</button>
+      <button class="button3" onclick="openPage('Contact', this, 'grey')">Gallery</button>
+      <button class="button4" onclick="openPage('About', this, 'grey')">Sponsors</button>
+      
+            <p id="DS"><b>DS INC.</b></p>
+            <p id="Rights">All Rights Reserved ©2022 DS INC.</p>
+            <p id="Desarrollador">Desarrollador: Maximo Ambrosio</p>
+            <p id="Mail">Informacion de Contacto: </br> mambrosio@itba.edu.ar</p>
+    
+        </footer>
+    
+    </div>
+
+
+
+
+
 </div>
+
+
+
 
 <div id="News" class="tabcontent">
 
@@ -294,27 +316,19 @@ En el comienzo de la temporada 2022, logró alcanzar las finales en los torneos,
 
 
 
-
-
-    <footer id="footer2">
-        <img id="logo" src="logo.png" alt="logo1" height="90px" width="90px">
-        <button id="button" onclick="openPage('Home', this, 'grey')">Home</button>
-        <button id="button2" onclick="openPage('News', this, 'grey')" id="defaultOpen">History</button>
-        <button id="button3" onclick="openPage('Contact', this, 'grey')">Gallery</button>
-        <button id="button4" onclick="openPage('About', this, 'grey')">Sponsors</button>
+<footer>
+  <img id="logo" src="logo.png" alt="logo1" height="90px" width="90px">
+  <button class="button" onclick="openPage('Home', this, 'grey')" id="defaultOpen">Home</button>
+  <button class="button2" onclick="openPage('News', this, 'grey')">History</button>
+  <button class="button3" onclick="openPage('Contact', this, 'grey')">Gallery</button>
+  <button class="button4" onclick="openPage('About', this, 'grey')">Sponsors</button>
+  
         <p id="DS"><b>DS INC.</b></p>
         <p id="Rights">All Rights Reserved ©2022 DS INC.</p>
         <p id="Desarrollador">Desarrollador: Maximo Ambrosio</p>
         <p id="Mail">Informacion de Contacto: </br> mambrosio@itba.edu.ar</p>
-        
 
     </footer>
-   
-
-
-
-
-
 
 
 
@@ -383,14 +397,17 @@ En el comienzo de la temporada 2022, logró alcanzar las finales en los torneos,
  
 <div id="About" class="tabcontent">
 
- 
+
 
 </div>
 
 
 
 
+  
 
+
+    
 
 
 
